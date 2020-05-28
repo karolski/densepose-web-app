@@ -1,0 +1,5 @@
+detectron2
+venv
+image_densepose_contour.pkl
+model_final*
+.idea
