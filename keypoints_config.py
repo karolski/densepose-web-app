@@ -11,18 +11,18 @@ keypoints_config = {
             "v": 0,
         }
     },
-    # "right_upper_arm": {
-    #     "a": {
-    #         "i_body_part_classification": 16,
-    #         "u": 0,
-    #         "v": 256,
-    #     },
-    #     "b": {
-    #         "i_body_part_classification": 16,
-    #         "u": 256,
-    #         "v": 256,
-    #     }
-    # },
+    "right_upper_arm": {
+        "a": {
+            "i_body_part_classification": 16,
+            "u": 0,
+            "v": 256,
+        },
+        "b": {
+            "i_body_part_classification": 16,
+            "u": 256,
+            "v": 256,
+        }
+    },
     "left_upper_arm": {
         "a": {
             "i_body_part_classification": 15,
