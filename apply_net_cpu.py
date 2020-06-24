@@ -92,15 +92,16 @@ class DumpWithCpu(DumpAction):
                         result_keypoints[keypoints_name]['bx'] = ix + offset_x
                         result_keypoints[keypoints_name]['by'] = iy + offset_y
 
-            if not result_keypoints[keypoints_name]['ax'] or not result_keypoints[keypoints_name]['bx']:
+            if not 'ax' in result_keypoints[keypoints_name] or not 'bx' in result_keypoints[keypoints_name]:
                 del result_keypoints[keypoints_name]
+            print(keypoints_name, 'dist a: ', min_distance_a, 'dist b: ', min_distance_b)
 
         return result_keypoints
 
     @classmethod
     def _draw_point_on_image(cls, image, coordinates, text=""):
         image = cv2.circle(image, coordinates, 5, (0, 255, 0), -1)
-        image = cv2.putText(image, text, coordinates, cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1, cv2.LINE_AA)
+        image = cv2.putText(image, text, coordinates, cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 1, cv2.LINE_AA)
         return image
 
     @classmethod

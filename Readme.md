@@ -6,7 +6,7 @@ source venv/bin/activate
 ```
 ### Run application
 ```bash
-flask run --host=0.0.0.0
+FLASK_ENV=development flask run
 ```
 
 ### Test the apply_net_cpu

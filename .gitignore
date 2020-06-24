@@ -4,3 +4,4 @@ image_densepose_contour.pkl
 model_final*
 .idea
 __pycache__
+.ipynb_checkpoints

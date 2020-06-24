@@ -47,5 +47,9 @@ def visualize_keypoints():
     image.save('image.jpg')
     DumpWithCpu.external_execute()
     image_file = DumpWithCpu.visualise_keypoints(keypoints_config)
-    # image_file.seek(0)
+    return send_file(image_file, attachment_filename='result.jpg')
+
+@app.route('/debug-visualize-keypoints', methods=['GET'])
+def debug_visualize_keypoints():
+    image_file = DumpWithCpu.visualise_keypoints(keypoints_config)
     return send_file(image_file, attachment_filename='result.jpg')
