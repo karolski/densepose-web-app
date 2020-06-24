@@ -1,3 +1,6 @@
+## Densepose Web-App
+Facebooks denspose wrapped in a flask web application serving results of denspose classifications and their visualisation. See `app.py`
+
 ### Local setup
 ```bash
 virtualenv -p python3 venv
